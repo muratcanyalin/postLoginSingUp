@@ -1,6 +1,6 @@
 
 
-const authReducer = (state = { auth: null }, action) => {
+const authReducer = (state = {auth: null},action) => {
     switch (action.type) {
         case "REGISTER":
             localStorage.setItem('auth', JSON.stringify(action.payload))
